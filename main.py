@@ -1,4 +1,3 @@
-
 from tkinter import *
 from tkinter import messagebox
 import random
@@ -41,9 +40,7 @@ def make_password():
     else:
         try:
             with open("data.json", 'r') as data_file:
-                # read data
                 data = json.load(data_file)
-                # update old data
 
         except FileNotFoundError:
             with open('data.json', 'w') as data_file:
